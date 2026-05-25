@@ -289,44 +289,8 @@ export default function HomePage() {
               gap: '1.5rem',
             }}
           >
-            {/* WellClub */}
-            <AnimatedSection direction="up" delay={0.1}>
-              <div className="card-dark" style={{ height: '100%' }}>
-                <div
-                  style={{
-                    width: '48px',
-                    height: '48px',
-                    borderRadius: '2px',
-                    backgroundColor: 'rgba(196,146,42,0.08)',
-                    border: '1px solid rgba(196,146,42,0.25)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginBottom: '1.25rem',
-                    color: '#C4922A',
-                  }}
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                  </svg>
-                </div>
-                <h3
-                  style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1C2B4A', marginBottom: '0.75rem' }}
-                >
-                  WellClub
-                </h3>
-                <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.75, marginBottom: '1.5rem' }}>
-                  Seguros de salud y vida para familias e inmigrantes hispanos en Estados Unidos.
-                  Planes personalizados, explicados en tu idioma, diseñados para tu situación real.
-                </p>
-                <Link href="/contacto" className="btn-secondary" style={{ fontSize: '0.875rem', padding: '0.6rem 1.5rem' }}>
-                  Cotizar cobertura
-                </Link>
-              </div>
-            </AnimatedSection>
-
             {/* Método CEO */}
-            <AnimatedSection direction="up" delay={0.2}>
+            <AnimatedSection direction="up" delay={0.1}>
               <div className="card-dark" style={{ height: '100%' }}>
                 <div
                   style={{
@@ -360,6 +324,42 @@ export default function HomePage() {
                 </p>
                 <Link href="/libros" className="btn-secondary" style={{ fontSize: '0.875rem', padding: '0.6rem 1.5rem' }}>
                   Conocer el método
+                </Link>
+              </div>
+            </AnimatedSection>
+
+            {/* WellClub */}
+            <AnimatedSection direction="up" delay={0.2}>
+              <div className="card-dark" style={{ height: '100%' }}>
+                <div
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    borderRadius: '2px',
+                    backgroundColor: 'rgba(196,146,42,0.08)',
+                    border: '1px solid rgba(196,146,42,0.25)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginBottom: '1.25rem',
+                    color: '#C4922A',
+                  }}
+                >
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                  </svg>
+                </div>
+                <h3
+                  style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1C2B4A', marginBottom: '0.75rem' }}
+                >
+                  WellClub
+                </h3>
+                <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.75, marginBottom: '1.5rem' }}>
+                  Seguros de salud y vida para familias e inmigrantes hispanos en Estados Unidos.
+                  Planes personalizados, explicados en tu idioma, diseñados para tu situación real.
+                </p>
+                <Link href="/contacto" className="btn-secondary" style={{ fontSize: '0.875rem', padding: '0.6rem 1.5rem' }}>
+                  Cotizar cobertura
                 </Link>
               </div>
             </AnimatedSection>
