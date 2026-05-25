@@ -7,7 +7,8 @@ import { usePathname } from 'next/navigation'
 const navLinks = [
   { href: '/', label: 'Inicio' },
   { href: '/sobre-mi', label: 'Sobre mí' },
-  { href: '/libros', label: 'Libro' },
+  { href: '/libros', label: 'Método C.E.O.' },
+  { href: '/wellclub', label: 'WellClub' },
   { href: '/conferencias', label: 'Conferencias' },
   { href: '/blog', label: 'Blog' },
   { href: '/contacto', label: 'Contacto' },
