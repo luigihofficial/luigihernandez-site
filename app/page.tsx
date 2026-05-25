@@ -354,12 +354,29 @@ export default function HomePage() {
                 >
                   WellClub
                 </h3>
-                <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.75, marginBottom: '1.5rem' }}>
-                  Seguros de salud y vida para familias e inmigrantes hispanos en Estados Unidos.
-                  Planes personalizados, explicados en tu idioma, diseñados para tu situación real.
+                <p style={{ color: '#5C5652', fontSize: '0.875rem', lineHeight: 1.75, marginBottom: '1rem' }}>
+                  Servicios financieros y legales para familias e inmigrantes hispanos en Estados Unidos, explicados en tu idioma.
                 </p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1.5rem 0', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  {[
+                    'Seguros de salud y vida',
+                    'Preparación de taxes',
+                    'Bookkeeping y contabilidad',
+                    'Notario público',
+                    'Creación de LLC y corporaciones',
+                  ].map((service) => (
+                    <li key={service} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#5C5652', fontSize: '0.875rem' }}>
+                      <span style={{ color: '#C4922A', flexShrink: 0 }}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </span>
+                      {service}
+                    </li>
+                  ))}
+                </ul>
                 <Link href="/contacto" className="btn-secondary" style={{ fontSize: '0.875rem', padding: '0.6rem 1.5rem' }}>
-                  Cotizar cobertura
+                  Solicitar información
                 </Link>
               </div>
             </AnimatedSection>
