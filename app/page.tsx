@@ -101,7 +101,7 @@ export default function HomePage() {
                 marginBottom: '1.75rem',
               }}
             >
-              Fundador de WellClub · Creador del Método C.E.O.
+              Creador del Método C.E.O.
             </span>
           </AnimatedSection>
 
