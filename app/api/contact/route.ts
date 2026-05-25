@@ -169,7 +169,7 @@ export async function POST(req: NextRequest) {
     const tipoLabel = tipoLabels[tipo] || tipo
 
     const emailPayload = {
-      from: 'Luigi Hernandez <onboarding@resend.dev>',
+      from: 'Luigi Hernandez <noreply@luigihernandez.com>',
       to: ['info@luigihofficial.com'],
       reply_to: email,
       subject: `[${tipoLabel}] Nuevo mensaje de ${nombre} — luigihernandez.com`,
