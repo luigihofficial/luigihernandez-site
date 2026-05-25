@@ -177,7 +177,7 @@ export default function LibrosPage() {
                   src="/images/fotos/libro-cover.jpg"
                   alt="Para, Piensa y Actúa — Luigi Hernandez"
                   fill
-                  style={{ objectFit: 'contain', objectPosition: 'center center' }}
+                  style={{ objectFit: 'cover' }}
                   sizes="(max-width: 768px) 100vw, 380px"
                   priority
                 />
