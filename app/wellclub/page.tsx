@@ -21,10 +21,19 @@ const services = [
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
       </svg>
     ),
-    title: 'Seguros de Salud y Vida',
+    title: 'Seguros',
     description:
-      'Planes de seguro médico y de vida adaptados a tu situación como familia o inmigrante en EE.UU. Te explicamos cada opción con claridad para que elijas con confianza.',
-    details: ['Seguros individuales y familiares', 'Planes del Marketplace (ACA/Obamacare)', 'Seguros de vida a término y permanentes', 'Cobertura para inmigrantes'],
+      'Planes de seguro adaptados a tu situación como familia o inmigrante en EE.UU. Salud, vida, auto, propiedades, viaje y más — te explicamos cada opción con claridad para que elijas con confianza.',
+    details: [
+      'Salud individual y familiar',
+      'Marketplace (ACA/Obamacare)',
+      'Seguros de vida a término y permanentes',
+      'Seguros suplementales',
+      'Gastos finales',
+      'Auto y propiedades',
+      'Coberturas internacionales',
+      'Seguros de viaje',
+    ],
   },
   {
     icon: (
@@ -157,13 +166,14 @@ export default function WellClubPage() {
             </AnimatedSection>
 
             <AnimatedSection direction="left">
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2.5rem' }}>
+                {/* Horizontal wordmark — visible on cream bg */}
                 <div
                   style={{
                     position: 'relative',
                     width: '100%',
-                    maxWidth: '320px',
-                    height: '80px',
+                    maxWidth: '360px',
+                    height: '110px',
                   }}
                 >
                   <Image
@@ -171,15 +181,16 @@ export default function WellClubPage() {
                     alt="WellClub"
                     fill
                     style={{ objectFit: 'contain', objectPosition: 'center' }}
-                    sizes="320px"
+                    sizes="360px"
                     priority
                   />
                 </div>
+                {/* Circular badge */}
                 <div
                   style={{
                     position: 'relative',
-                    width: '120px',
-                    height: '120px',
+                    width: '140px',
+                    height: '140px',
                   }}
                 >
                   <Image
@@ -187,7 +198,7 @@ export default function WellClubPage() {
                     alt="WellClub"
                     fill
                     style={{ objectFit: 'contain' }}
-                    sizes="120px"
+                    sizes="140px"
                   />
                 </div>
               </div>
@@ -316,21 +327,27 @@ export default function WellClubPage() {
       <section style={{ backgroundColor: '#1C2B4A', padding: '6rem 0' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
           <AnimatedSection direction="up">
+            {/* Logo on cream pill so colors show on navy bg */}
             <div
               style={{
-                position: 'relative',
-                width: '72px',
-                height: '72px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#FAF8F4',
+                borderRadius: '8px',
+                padding: '1rem 2rem',
                 margin: '0 auto 2rem',
               }}
             >
-              <Image
-                src="/images/logos/wellclub-brandmark.png"
-                alt="WellClub"
-                fill
-                style={{ objectFit: 'contain' }}
-                sizes="72px"
-              />
+              <div style={{ position: 'relative', width: '200px', height: '56px' }}>
+                <Image
+                  src="/images/logos/wellclub-logo.png"
+                  alt="WellClub"
+                  fill
+                  style={{ objectFit: 'contain' }}
+                  sizes="200px"
+                />
+              </div>
             </div>
             <h2 style={{ color: '#FAF8F4', fontWeight: 800, fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', marginBottom: '1rem' }}>
               ¿Listo para empezar?
