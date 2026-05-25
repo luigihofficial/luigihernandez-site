@@ -2,12 +2,15 @@
 
 :root {
   --gold: #C4922A;
-  --gold-light: #F0C040;
-  --bg: #080808;
-  --bg-secondary: #111111;
-  --bg-card: #161616;
-  --text-primary: #F5F5F5;
-  --text-secondary: #9CA3AF;
+  --gold-light: #D4A843;
+  --bg: #FAF8F4;
+  --bg-secondary: #F0EAE1;
+  --bg-card: #FFFFFF;
+  --bg-navy: #1C2B4A;
+  --text-primary: #1C2B4A;
+  --text-secondary: #5C5652;
+  --text-muted: #9B8F87;
+  --border: #E8DDD3;
 }
 
 * {
@@ -38,7 +41,7 @@ body {
   background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #D4C9BC;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -53,11 +56,11 @@ body {
   gap: 0.5rem;
   padding: 0.75rem 2rem;
   background-color: var(--gold);
-  color: #000;
+  color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
-  letter-spacing: 0.02em;
-  border-radius: 4px;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -81,8 +84,8 @@ body {
   color: var(--gold);
   font-weight: 700;
   font-size: 0.95rem;
-  letter-spacing: 0.02em;
-  border-radius: 4px;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
   border: 1.5px solid var(--gold);
   cursor: pointer;
   text-decoration: none;
@@ -90,11 +93,58 @@ body {
 }
 .btn-secondary:hover {
   background-color: var(--gold);
-  color: #000;
+  color: #fff;
   transform: translateY(-1px);
 }
 .btn-secondary:active {
   transform: translateY(0);
+}
+
+/* Button on navy background */
+.btn-primary-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background-color: var(--gold);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-primary-light:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-secondary-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: rgba(250,248,244,0.85);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+  border: 1.5px solid rgba(250,248,244,0.4);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.btn-secondary-light:hover {
+  background-color: rgba(250,248,244,0.1);
+  color: #FAF8F4;
+  border-color: rgba(250,248,244,0.7);
+  transform: translateY(-1px);
 }
 
 /* Section divider */
@@ -128,30 +178,33 @@ body {
 /* Card */
 .card-dark {
   background-color: var(--bg-card);
-  border: 1px solid #222;
-  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
   padding: 2rem;
-  transition: border-color 0.2s ease;
+  box-shadow: 0 2px 16px rgba(28, 43, 74, 0.06);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .card-dark:hover {
-  border-color: var(--gold);
+  box-shadow: 0 4px 24px rgba(28, 43, 74, 0.1);
+  border-color: rgba(196,146,42,0.4);
 }
 
 /* Input base */
 .input-dark {
   width: 100%;
-  background-color: #1a1a1a;
-  border: 1px solid #333;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border);
   color: var(--text-primary);
   padding: 0.75rem 1rem;
-  border-radius: 4px;
+  border-radius: 2px;
   font-size: 0.95rem;
   outline: none;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .input-dark:focus {
   border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(196,146,42,0.1);
 }
 .input-dark::placeholder {
-  color: #555;
+  color: var(--text-muted);
 }

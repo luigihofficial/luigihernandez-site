@@ -30,7 +30,7 @@ export default function PrensaPage() {
     <>
       {/* Hero */}
       <section
-        style={{ backgroundColor: '#080808', paddingTop: '120px', paddingBottom: '4rem' }}
+        style={{ backgroundColor: '#FAF8F4', paddingTop: '120px', paddingBottom: '4rem' }}
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
@@ -51,14 +51,14 @@ export default function PrensaPage() {
               style={{
                 fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '1.25rem',
                 lineHeight: 1.15,
               }}
             >
               Sala de prensa
             </h1>
-            <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '600px' }}>
+            <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '600px' }}>
               Recursos para periodistas, medios de comunicación y creadores de contenido que
               deseen cubrir a Luigi Hernandez, WellClub o el Método C.E.O.
             </p>
@@ -67,12 +67,12 @@ export default function PrensaPage() {
       </section>
 
       {/* Coming soon notice */}
-      <section style={{ backgroundColor: '#080808', paddingBottom: '4rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '4rem' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
             <div
               style={{
-                backgroundColor: '#161616',
+                backgroundColor: '#FFFFFF',
                 border: '1px solid rgba(196,146,42,0.2)',
                 borderRadius: '8px',
                 padding: '2.5rem',
@@ -100,10 +100,10 @@ export default function PrensaPage() {
                   <line x1="12" y1="16" x2="12.01" y2="16" />
                 </svg>
               </div>
-              <h2 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '1.3rem', marginBottom: '0.75rem' }}>
+              <h2 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1.3rem', marginBottom: '0.75rem' }}>
                 Kit de prensa próximamente
               </h2>
-              <p style={{ color: '#9CA3AF', fontSize: '0.95rem', lineHeight: 1.7, maxWidth: '480px', margin: '0 auto' }}>
+              <p style={{ color: '#5C5652', fontSize: '0.95rem', lineHeight: 1.7, maxWidth: '480px', margin: '0 auto' }}>
                 Estamos preparando el kit de prensa completo con fotografías de alta resolución,
                 logotipos y materiales descargables. Mientras tanto, puedes encontrar la
                 información que necesitas más abajo o contactarnos directamente.
@@ -114,7 +114,7 @@ export default function PrensaPage() {
       </section>
 
       {/* Media Kit content */}
-      <section style={{ backgroundColor: '#111111', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '6rem 0' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ marginBottom: '3.5rem' }}>
             <span className="section-divider-left" style={{ marginBottom: '1.5rem' }} />
@@ -122,14 +122,14 @@ export default function PrensaPage() {
               style={{
                 fontSize: 'clamp(1.5rem, 3vw, 2rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
                 marginBottom: '0.5rem',
               }}
             >
               Biografía oficial (versión corta)
             </h2>
-            <p style={{ color: '#9CA3AF', fontSize: '0.8rem' }}>Para programas, presentaciones y fichas de speaker</p>
+            <p style={{ color: '#5C5652', fontSize: '0.8rem' }}>Para programas, presentaciones y fichas de speaker</p>
           </AnimatedSection>
 
           <AnimatedSection direction="up" delay={0.1}>
@@ -137,7 +137,7 @@ export default function PrensaPage() {
               className="card-dark"
               style={{ marginBottom: '3rem', position: 'relative' }}
             >
-              <p style={{ color: '#9CA3AF', fontSize: '0.95rem', lineHeight: 1.85, fontStyle: 'italic' }}>
+              <p style={{ color: '#5C5652', fontSize: '0.95rem', lineHeight: 1.85, fontStyle: 'italic' }}>
                 {bioShort}
               </p>
             </div>
@@ -148,13 +148,13 @@ export default function PrensaPage() {
               style={{
                 fontSize: 'clamp(1.5rem, 3vw, 2rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '0.5rem',
               }}
             >
               Biografía completa
             </h2>
-            <p style={{ color: '#9CA3AF', fontSize: '0.8rem', marginBottom: '1.5rem' }}>Para artículos y perfiles</p>
+            <p style={{ color: '#5C5652', fontSize: '0.8rem', marginBottom: '1.5rem' }}>Para artículos y perfiles</p>
           </AnimatedSection>
 
           <AnimatedSection direction="up" delay={0.2}>
@@ -162,7 +162,7 @@ export default function PrensaPage() {
               {bioLong.split('\n\n').map((paragraph, i) => (
                 <p
                   key={i}
-                  style={{ color: '#9CA3AF', fontSize: '0.95rem', lineHeight: 1.85, marginBottom: i < 4 ? '1rem' : '0' }}
+                  style={{ color: '#5C5652', fontSize: '0.95rem', lineHeight: 1.85, marginBottom: i < 4 ? '1rem' : '0' }}
                 >
                   {paragraph}
                 </p>
@@ -176,7 +176,7 @@ export default function PrensaPage() {
               style={{
                 fontSize: 'clamp(1.5rem, 3vw, 2rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '1.5rem',
               }}
             >
@@ -209,7 +209,7 @@ export default function PrensaPage() {
                   <p style={{ color: '#555', fontSize: '0.75rem', marginBottom: '0.25rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     {item.label}
                   </p>
-                  <p style={{ color: '#F5F5F5', fontSize: '0.875rem', fontWeight: 600 }}>{item.value}</p>
+                  <p style={{ color: '#1C2B4A', fontSize: '0.875rem', fontWeight: 600 }}>{item.value}</p>
                 </div>
               ))}
             </div>
@@ -219,17 +219,17 @@ export default function PrensaPage() {
           <AnimatedSection direction="up" delay={0.35}>
             <div
               style={{
-                backgroundColor: '#161616',
+                backgroundColor: '#FFFFFF',
                 border: '1px solid rgba(196,146,42,0.2)',
                 borderRadius: '8px',
                 padding: '2rem',
                 textAlign: 'center',
               }}
             >
-              <h3 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.75rem' }}>
+              <h3 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.75rem' }}>
                 Contacto para medios
               </h3>
-              <p style={{ color: '#9CA3AF', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+              <p style={{ color: '#5C5652', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
                 Para entrevistas, apariciones en medios, o solicitar materiales adicionales:
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>

@@ -19,7 +19,7 @@ export default function ContactoPage() {
     <>
       {/* Hero */}
       <section
-        style={{ backgroundColor: '#080808', paddingTop: '120px', paddingBottom: '4rem' }}
+        style={{ backgroundColor: '#FAF8F4', paddingTop: '120px', paddingBottom: '4rem' }}
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
@@ -40,14 +40,14 @@ export default function ContactoPage() {
               style={{
                 fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '1.25rem',
                 lineHeight: 1.15,
               }}
             >
               Hablemos
             </h1>
-            <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '560px' }}>
+            <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '560px' }}>
               Ya sea sobre mentoría, WellClub, una conferencia o simplemente para conectar —
               me alegra escucharte.
             </p>
@@ -56,7 +56,7 @@ export default function ContactoPage() {
       </section>
 
       {/* Main content */}
-      <section style={{ backgroundColor: '#080808', paddingBottom: '6rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '6rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div
             style={{
@@ -76,7 +76,7 @@ export default function ContactoPage() {
               <div className="card-dark">
                 <h2
                   style={{
-                    color: '#F5F5F5',
+                    color: '#1C2B4A',
                     fontWeight: 700,
                     fontSize: '1.2rem',
                     marginBottom: '1.5rem',

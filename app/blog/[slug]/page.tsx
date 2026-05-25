@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Hero */}
       <section
-        style={{ backgroundColor: '#080808', paddingTop: '120px', paddingBottom: '3rem' }}
+        style={{ backgroundColor: '#FAF8F4', paddingTop: '120px', paddingBottom: '3rem' }}
       >
         <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
@@ -127,7 +127,7 @@ export default async function BlogPostPage({ params }: Props) {
               style={{
                 fontSize: 'clamp(1.8rem, 4vw, 3rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 lineHeight: 1.2,
                 marginBottom: '1rem',
               }}
@@ -135,7 +135,7 @@ export default async function BlogPostPage({ params }: Props) {
               {post.title}
             </h1>
 
-            <p style={{ color: '#9CA3AF', fontSize: '1.1rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5652', fontSize: '1.1rem', lineHeight: 1.7 }}>
               {post.description}
             </p>
           </AnimatedSection>
@@ -148,7 +148,7 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       {/* Content */}
-      <section style={{ backgroundColor: '#080808', padding: '3rem 0 6rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', padding: '3rem 0 6rem' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
             <div
@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <h2
                       key={i}
                       style={{
-                        color: '#F5F5F5',
+                        color: '#1C2B4A',
                         fontSize: '1.2rem',
                         fontWeight: 700,
                         lineHeight: 1.4,
@@ -179,11 +179,11 @@ export default async function BlogPostPage({ params }: Props) {
                 return (
                   <p
                     key={i}
-                    style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.85 }}
+                    style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.85 }}
                   >
                     {parts.map((part, j) =>
                       j % 2 === 1 ? (
-                        <strong key={j} style={{ color: '#F5F5F5', fontWeight: 700 }}>
+                        <strong key={j} style={{ color: '#1C2B4A', fontWeight: 700 }}>
                           {part}
                         </strong>
                       ) : (
@@ -199,7 +199,7 @@ export default async function BlogPostPage({ params }: Props) {
       </section>
 
       {/* Author bio */}
-      <section style={{ backgroundColor: '#111111', padding: '3rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '3rem 0' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
             <div
@@ -227,10 +227,10 @@ export default async function BlogPostPage({ params }: Props) {
                 LH
               </div>
               <div>
-                <p style={{ color: '#F5F5F5', fontWeight: 700, marginBottom: '0.25rem' }}>
+                <p style={{ color: '#1C2B4A', fontWeight: 700, marginBottom: '0.25rem' }}>
                   Luigi Hernandez
                 </p>
-                <p style={{ color: '#9CA3AF', fontSize: '0.875rem', lineHeight: 1.65 }}>
+                <p style={{ color: '#5C5652', fontSize: '0.875rem', lineHeight: 1.65 }}>
                   Emprendedor venezolano-americano, fundador de WellClub y creador del Método C.E.O.
                   Autor de &ldquo;Para, Piensa y Actúa&rdquo;. Escribe sobre criterio, estrategia y oportunidad.
                 </p>
@@ -238,7 +238,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <Link href="/sobre-mi" style={{ color: '#C4922A', fontSize: '0.875rem', textDecoration: 'none', fontWeight: 600 }}>
                     Conocer más →
                   </Link>
-                  <Link href="/contacto" style={{ color: '#9CA3AF', fontSize: '0.875rem', textDecoration: 'none' }}>
+                  <Link href="/contacto" style={{ color: '#5C5652', fontSize: '0.875rem', textDecoration: 'none' }}>
                     Contactar
                   </Link>
                 </div>
@@ -250,10 +250,10 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Related posts */}
       {relatedPosts.length > 0 && (
-        <section style={{ backgroundColor: '#080808', padding: '4rem 0 6rem' }}>
+        <section style={{ backgroundColor: '#FAF8F4', padding: '4rem 0 6rem' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1.5rem' }}>
             <AnimatedSection direction="up" style={{ marginBottom: '2rem' }}>
-              <h2 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '1.3rem' }}>
+              <h2 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1.3rem' }}>
                 Más artículos de{' '}
                 <span style={{ color: '#C4922A' }}>{post.category}</span>
               </h2>
@@ -267,10 +267,10 @@ export default async function BlogPostPage({ params }: Props) {
                       className="card-dark"
                       style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}
                     >
-                      <h3 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '0.95rem' }}>
+                      <h3 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '0.95rem' }}>
                         {related.title}
                       </h3>
-                      <p style={{ color: '#9CA3AF', fontSize: '0.85rem', lineHeight: 1.6 }}>
+                      <p style={{ color: '#5C5652', fontSize: '0.85rem', lineHeight: 1.6 }}>
                         {related.description}
                       </p>
                       <span style={{ color: '#C4922A', fontSize: '0.8rem', fontWeight: 600 }}>
@@ -286,7 +286,7 @@ export default async function BlogPostPage({ params }: Props) {
       )}
 
       {/* CTA */}
-      <section style={{ backgroundColor: '#111111', padding: '5rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '5rem 0' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 1.5rem', textAlign: 'center' }}>
           <AnimatedSection direction="up">
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -294,14 +294,14 @@ export default async function BlogPostPage({ params }: Props) {
               style={{
                 fontSize: 'clamp(1.5rem, 3vw, 2rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
                 marginBottom: '0.75rem',
               }}
             >
               ¿Te resonó este artículo?
             </h2>
-            <p style={{ color: '#9CA3AF', fontSize: '0.95rem', marginBottom: '2rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#5C5652', fontSize: '0.95rem', marginBottom: '2rem', lineHeight: 1.7 }}>
               Si quieres profundizar en el Método C.E.O. o explorar cómo WellClub puede proteger
               a tu familia, escríbeme. Con gusto conversamos.
             </p>

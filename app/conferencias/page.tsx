@@ -141,7 +141,7 @@ export default function ConferenciasPage() {
 
       {/* Hero */}
       <section
-        style={{ backgroundColor: '#080808', paddingTop: '120px', paddingBottom: '4rem' }}
+        style={{ backgroundColor: '#FAF8F4', paddingTop: '120px', paddingBottom: '4rem' }}
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ maxWidth: '700px' }}>
@@ -165,7 +165,7 @@ export default function ConferenciasPage() {
               style={{
                 fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '1.25rem',
                 lineHeight: 1.15,
               }}
@@ -174,7 +174,7 @@ export default function ConferenciasPage() {
               <br />
               <span style={{ color: '#C4922A' }}>mueven equipos</span>
             </h1>
-            <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+            <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
               Luigi Hernandez lleva a tu evento el criterio, la experiencia y la honestidad de
               quien construyó desde cero en un país nuevo. Tres keynotes disponibles, todas
               con sustancia práctica.
@@ -184,7 +184,7 @@ export default function ConferenciasPage() {
       </section>
 
       {/* Keynotes */}
-      <section style={{ backgroundColor: '#080808', paddingBottom: '6rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '6rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             {keynotes.map((keynote, i) => (
@@ -215,13 +215,13 @@ export default function ConferenciasPage() {
                       {keynote.icon}
                     </div>
                     <div>
-                      <h2 style={{ color: '#F5F5F5', fontWeight: 800, fontSize: '1.25rem', marginBottom: '0.25rem' }}>
+                      <h2 style={{ color: '#1C2B4A', fontWeight: 800, fontSize: '1.25rem', marginBottom: '0.25rem' }}>
                         {keynote.title}
                       </h2>
                       <p style={{ color: '#C4922A', fontSize: '0.875rem', fontWeight: 600, marginBottom: '1rem' }}>
                         {keynote.subtitle}
                       </p>
-                      <p style={{ color: '#9CA3AF', fontSize: '0.95rem', lineHeight: 1.75, marginBottom: '1.5rem' }}>
+                      <p style={{ color: '#5C5652', fontSize: '0.95rem', lineHeight: 1.75, marginBottom: '1.5rem' }}>
                         {keynote.description}
                       </p>
                       <div
@@ -229,7 +229,7 @@ export default function ConferenciasPage() {
                           display: 'grid',
                           gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
                           gap: '1rem',
-                          borderTop: '1px solid #222',
+                          borderTop: '1px solid #E8DDD3',
                           paddingTop: '1.25rem',
                         }}
                       >
@@ -237,13 +237,13 @@ export default function ConferenciasPage() {
                           <p style={{ color: '#555', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>
                             Duración
                           </p>
-                          <p style={{ color: '#F5F5F5', fontSize: '0.875rem', fontWeight: 600 }}>{keynote.duration}</p>
+                          <p style={{ color: '#1C2B4A', fontSize: '0.875rem', fontWeight: 600 }}>{keynote.duration}</p>
                         </div>
                         <div>
                           <p style={{ color: '#555', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>
                             Audiencia ideal
                           </p>
-                          <p style={{ color: '#F5F5F5', fontSize: '0.875rem' }}>{keynote.audience}</p>
+                          <p style={{ color: '#1C2B4A', fontSize: '0.875rem' }}>{keynote.audience}</p>
                         </div>
                         <div>
                           <p style={{ color: '#555', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
@@ -251,7 +251,7 @@ export default function ConferenciasPage() {
                           </p>
                           <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
                             {keynote.deliverables.map((d) => (
-                              <li key={d} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#9CA3AF', fontSize: '0.8rem' }}>
+                              <li key={d} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#5C5652', fontSize: '0.8rem' }}>
                                 <span style={{ color: '#C4922A' }}>✓</span> {d}
                               </li>
                             ))}
@@ -274,7 +274,7 @@ export default function ConferenciasPage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ backgroundColor: '#111111', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '6rem 0' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -282,7 +282,7 @@ export default function ConferenciasPage() {
               style={{
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
               }}
             >
@@ -294,10 +294,10 @@ export default function ConferenciasPage() {
             {faqs.map((faq, i) => (
               <AnimatedSection key={faq.q} direction="up" delay={i * 0.07}>
                 <div className="card-dark">
-                  <h3 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '1rem', marginBottom: '0.6rem' }}>
+                  <h3 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1rem', marginBottom: '0.6rem' }}>
                     {faq.q}
                   </h3>
-                  <p style={{ color: '#9CA3AF', fontSize: '0.9rem', lineHeight: 1.7 }}>{faq.a}</p>
+                  <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.7 }}>{faq.a}</p>
                 </div>
               </AnimatedSection>
             ))}

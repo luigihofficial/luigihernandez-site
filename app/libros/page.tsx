@@ -85,7 +85,7 @@ export default function LibrosPage() {
       {/* Hero */}
       <section
         style={{
-          backgroundColor: '#080808',
+          backgroundColor: '#FAF8F4',
           paddingTop: '120px',
           paddingBottom: '4rem',
         }}
@@ -122,7 +122,7 @@ export default function LibrosPage() {
                 style={{
                   fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                   fontWeight: 800,
-                  color: '#F5F5F5',
+                  color: '#1C2B4A',
                   marginBottom: '0.75rem',
                   lineHeight: 1.1,
                 }}
@@ -133,7 +133,7 @@ export default function LibrosPage() {
               <p
                 style={{
                   fontSize: '1.2rem',
-                  color: '#9CA3AF',
+                  color: '#5C5652',
                   marginBottom: '1rem',
                   letterSpacing: '0.02em',
                 }}
@@ -146,7 +146,7 @@ export default function LibrosPage() {
                 <span style={{ color: '#C4922A', fontWeight: 700 }}>O</span>
                 portunidad
               </p>
-              <p style={{ color: '#9CA3AF', fontSize: '1rem', lineHeight: 1.8, marginBottom: '2rem' }}>
+              <p style={{ color: '#5C5652', fontSize: '1rem', lineHeight: 1.8, marginBottom: '2rem' }}>
                 El libro que condensa años de emprendimiento real en un sistema practicable.
                 Para líderes y emprendedores que quieren dejar de improvisar y empezar a
                 construir con criterio.
@@ -188,7 +188,7 @@ export default function LibrosPage() {
       </section>
 
       {/* Method explanation */}
-      <section style={{ backgroundColor: '#111111', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '6rem 0' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -196,7 +196,7 @@ export default function LibrosPage() {
               style={{
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
               }}
             >
@@ -251,10 +251,10 @@ export default function LibrosPage() {
                   >
                     {item.letter}
                   </div>
-                  <h3 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.75rem' }}>
+                  <h3 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.75rem' }}>
                     {item.title}
                   </h3>
-                  <p style={{ color: '#9CA3AF', fontSize: '0.9rem', lineHeight: 1.7 }}>
+                  <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.7 }}>
                     {item.description}
                   </p>
                 </div>
@@ -265,7 +265,7 @@ export default function LibrosPage() {
       </section>
 
       {/* Chapters */}
-      <section style={{ backgroundColor: '#080808', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#FAF8F4', padding: '6rem 0' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -273,7 +273,7 @@ export default function LibrosPage() {
               style={{
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
               }}
             >
@@ -300,10 +300,10 @@ export default function LibrosPage() {
                     {chapter.number}
                   </span>
                   <div>
-                    <h3 style={{ color: '#F5F5F5', fontWeight: 700, fontSize: '1rem', marginBottom: '0.4rem' }}>
+                    <h3 style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1rem', marginBottom: '0.4rem' }}>
                       {chapter.title}
                     </h3>
-                    <p style={{ color: '#9CA3AF', fontSize: '0.875rem', lineHeight: 1.7 }}>
+                    <p style={{ color: '#5C5652', fontSize: '0.875rem', lineHeight: 1.7 }}>
                       {chapter.description}
                     </p>
                   </div>
@@ -315,7 +315,7 @@ export default function LibrosPage() {
       </section>
 
       {/* What you'll learn */}
-      <section style={{ backgroundColor: '#111111', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '6rem 0' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -323,7 +323,7 @@ export default function LibrosPage() {
               style={{
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
               }}
             >
@@ -345,9 +345,9 @@ export default function LibrosPage() {
                     display: 'flex',
                     gap: '0.75rem',
                     padding: '1rem',
-                    backgroundColor: '#161616',
+                    backgroundColor: '#FFFFFF',
                     borderRadius: '6px',
-                    border: '1px solid #222',
+                    border: '1px solid #E8DDD3',
                   }}
                 >
                   <span style={{ color: '#C4922A', flexShrink: 0, marginTop: '0.1rem' }}>
@@ -355,7 +355,7 @@ export default function LibrosPage() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </span>
-                  <p style={{ color: '#9CA3AF', fontSize: '0.9rem', lineHeight: 1.6 }}>{item}</p>
+                  <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.6 }}>{item}</p>
                 </div>
               </AnimatedSection>
             ))}

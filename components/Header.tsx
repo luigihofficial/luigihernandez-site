@@ -24,7 +24,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMenuOpen(false)
   }, [pathname])
@@ -38,9 +37,9 @@ export default function Header() {
         right: 0,
         zIndex: 1000,
         transition: 'background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease',
-        backgroundColor: scrolled ? 'rgba(8,8,8,0.92)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        boxShadow: scrolled ? '0 1px 0 rgba(196,146,42,0.15)' : 'none',
+        backgroundColor: scrolled ? 'rgba(250,248,244,0.96)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(16px)' : 'none',
+        boxShadow: scrolled ? '0 1px 0 rgba(232,221,211,0.8)' : 'none',
       }}
     >
       <div
@@ -70,7 +69,7 @@ export default function Header() {
               border: '2px solid #C4922A',
               color: '#C4922A',
               fontWeight: 800,
-              fontSize: '0.9rem',
+              fontSize: '0.85rem',
               letterSpacing: '0.05em',
               flexShrink: 0,
             }}
@@ -79,10 +78,10 @@ export default function Header() {
           </span>
           <span
             style={{
-              color: '#F5F5F5',
-              fontWeight: 600,
+              color: '#1C2B4A',
+              fontWeight: 700,
               fontSize: '1rem',
-              letterSpacing: '0.01em',
+              letterSpacing: '0.02em',
             }}
           >
             Luigi Hernandez
@@ -99,17 +98,17 @@ export default function Header() {
                 href={link.href}
                 style={{
                   textDecoration: 'none',
-                  fontSize: '0.9rem',
+                  fontSize: '0.875rem',
                   fontWeight: isActive ? 700 : 500,
-                  color: isActive ? '#C4922A' : '#9CA3AF',
+                  color: isActive ? '#C4922A' : '#5C5652',
                   transition: 'color 0.2s ease',
-                  letterSpacing: '0.01em',
+                  letterSpacing: '0.02em',
                 }}
                 onMouseEnter={(e) => {
-                  if (!isActive) (e.target as HTMLElement).style.color = '#F5F5F5'
+                  if (!isActive) (e.target as HTMLElement).style.color = '#1C2B4A'
                 }}
                 onMouseLeave={(e) => {
-                  if (!isActive) (e.target as HTMLElement).style.color = '#9CA3AF'
+                  if (!isActive) (e.target as HTMLElement).style.color = '#5C5652'
                 }}
               >
                 {link.label}
@@ -138,7 +137,7 @@ export default function Header() {
               display: 'block',
               width: '24px',
               height: '2px',
-              background: '#F5F5F5',
+              background: '#1C2B4A',
               transition: 'transform 0.2s, opacity 0.2s',
               transform: menuOpen ? 'rotate(45deg) translate(5px,5px)' : 'none',
             }}
@@ -148,7 +147,7 @@ export default function Header() {
               display: 'block',
               width: '24px',
               height: '2px',
-              background: '#F5F5F5',
+              background: '#1C2B4A',
               opacity: menuOpen ? 0 : 1,
               transition: 'opacity 0.2s',
             }}
@@ -158,7 +157,7 @@ export default function Header() {
               display: 'block',
               width: '24px',
               height: '2px',
-              background: '#F5F5F5',
+              background: '#1C2B4A',
               transition: 'transform 0.2s, opacity 0.2s',
               transform: menuOpen ? 'rotate(-45deg) translate(5px,-5px)' : 'none',
             }}
@@ -169,12 +168,12 @@ export default function Header() {
       {/* Mobile Menu */}
       <div
         style={{
-          backgroundColor: 'rgba(8,8,8,0.97)',
-          backdropFilter: 'blur(12px)',
+          backgroundColor: 'rgba(250,248,244,0.98)',
+          backdropFilter: 'blur(16px)',
           overflow: 'hidden',
           maxHeight: menuOpen ? '400px' : '0',
           transition: 'max-height 0.3s ease',
-          borderTop: menuOpen ? '1px solid #222' : 'none',
+          borderTop: menuOpen ? '1px solid #E8DDD3' : 'none',
         }}
         className="mobile-menu"
       >
@@ -196,9 +195,9 @@ export default function Header() {
                   textDecoration: 'none',
                   fontSize: '1rem',
                   fontWeight: isActive ? 700 : 500,
-                  color: isActive ? '#C4922A' : '#9CA3AF',
+                  color: isActive ? '#C4922A' : '#5C5652',
                   padding: '0.85rem 0',
-                  borderBottom: '1px solid #1a1a1a',
+                  borderBottom: '1px solid #F0EAE1',
                   transition: 'color 0.2s ease',
                 }}
               >

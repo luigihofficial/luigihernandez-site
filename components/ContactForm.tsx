@@ -66,14 +66,14 @@ export default function ContactForm() {
 
   const inputStyle: React.CSSProperties = {
     width: '100%',
-    backgroundColor: '#1a1a1a',
-    border: '1px solid #333',
-    color: '#F5F5F5',
+    backgroundColor: '#FFFFFF',
+    border: '1px solid #E8DDD3',
+    color: '#1C2B4A',
     padding: '0.75rem 1rem',
-    borderRadius: '4px',
+    borderRadius: '2px',
     fontSize: '0.95rem',
     outline: 'none',
-    transition: 'border-color 0.2s ease',
+    transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
     fontFamily: 'inherit',
   }
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="nombre"
-          style={{ display: 'block', color: '#9CA3AF', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 500 }}
+          style={{ display: 'block', color: '#5C5652', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 600 }}
         >
           Nombre completo *
         </label>
@@ -96,8 +96,8 @@ export default function ContactForm() {
           value={form.nombre}
           onChange={handleChange}
           style={inputStyle}
-          onFocus={(e) => (e.target.style.borderColor = '#C4922A')}
-          onBlur={(e) => (e.target.style.borderColor = '#333')}
+          onFocus={(e) => { e.target.style.borderColor = '#C4922A'; e.target.style.boxShadow = '0 0 0 3px rgba(196,146,42,0.1)' }}
+          onBlur={(e) => { e.target.style.borderColor = '#E8DDD3'; e.target.style.boxShadow = 'none' }}
         />
       </div>
 
@@ -105,7 +105,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="email"
-          style={{ display: 'block', color: '#9CA3AF', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 500 }}
+          style={{ display: 'block', color: '#5C5652', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 600 }}
         >
           Correo electrónico *
         </label>
@@ -118,8 +118,8 @@ export default function ContactForm() {
           value={form.email}
           onChange={handleChange}
           style={inputStyle}
-          onFocus={(e) => (e.target.style.borderColor = '#C4922A')}
-          onBlur={(e) => (e.target.style.borderColor = '#333')}
+          onFocus={(e) => { e.target.style.borderColor = '#C4922A'; e.target.style.boxShadow = '0 0 0 3px rgba(196,146,42,0.1)' }}
+          onBlur={(e) => { e.target.style.borderColor = '#E8DDD3'; e.target.style.boxShadow = 'none' }}
         />
       </div>
 
@@ -127,7 +127,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="whatsapp"
-          style={{ display: 'block', color: '#9CA3AF', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 500 }}
+          style={{ display: 'block', color: '#5C5652', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 600 }}
         >
           WhatsApp (opcional)
         </label>
@@ -139,8 +139,8 @@ export default function ContactForm() {
           value={form.whatsapp}
           onChange={handleChange}
           style={inputStyle}
-          onFocus={(e) => (e.target.style.borderColor = '#C4922A')}
-          onBlur={(e) => (e.target.style.borderColor = '#333')}
+          onFocus={(e) => { e.target.style.borderColor = '#C4922A'; e.target.style.boxShadow = '0 0 0 3px rgba(196,146,42,0.1)' }}
+          onBlur={(e) => { e.target.style.borderColor = '#E8DDD3'; e.target.style.boxShadow = 'none' }}
         />
       </div>
 
@@ -148,7 +148,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="tipo"
-          style={{ display: 'block', color: '#9CA3AF', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 500 }}
+          style={{ display: 'block', color: '#5C5652', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 600 }}
         >
           Tipo de consulta *
         </label>
@@ -159,11 +159,11 @@ export default function ContactForm() {
           value={form.tipo}
           onChange={handleChange}
           style={{ ...inputStyle, cursor: 'pointer' }}
-          onFocus={(e) => (e.target.style.borderColor = '#C4922A')}
-          onBlur={(e) => (e.target.style.borderColor = '#333')}
+          onFocus={(e) => { e.target.style.borderColor = '#C4922A'; e.target.style.boxShadow = '0 0 0 3px rgba(196,146,42,0.1)' }}
+          onBlur={(e) => { e.target.style.borderColor = '#E8DDD3'; e.target.style.boxShadow = 'none' }}
         >
           {tipoOptions.map((opt) => (
-            <option key={opt.value} value={opt.value} style={{ backgroundColor: '#1a1a1a' }}>
+            <option key={opt.value} value={opt.value} style={{ backgroundColor: '#FFFFFF' }}>
               {opt.label}
             </option>
           ))}
@@ -174,7 +174,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="mensaje"
-          style={{ display: 'block', color: '#9CA3AF', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 500 }}
+          style={{ display: 'block', color: '#5C5652', fontSize: '0.85rem', marginBottom: '0.4rem', fontWeight: 600 }}
         >
           Mensaje *
         </label>
@@ -187,8 +187,8 @@ export default function ContactForm() {
           value={form.mensaje}
           onChange={handleChange}
           style={{ ...inputStyle, resize: 'vertical', minHeight: '120px' }}
-          onFocus={(e) => (e.target.style.borderColor = '#C4922A')}
-          onBlur={(e) => (e.target.style.borderColor = '#333')}
+          onFocus={(e) => { e.target.style.borderColor = '#C4922A'; e.target.style.boxShadow = '0 0 0 3px rgba(196,146,42,0.1)' }}
+          onBlur={(e) => { e.target.style.borderColor = '#E8DDD3'; e.target.style.boxShadow = 'none' }}
         />
       </div>
 

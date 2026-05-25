@@ -97,7 +97,7 @@ export default function SobreMiPage() {
       {/* Hero */}
       <section
         style={{
-          backgroundColor: '#080808',
+          backgroundColor: '#FAF8F4',
           paddingTop: '120px',
           paddingBottom: '4rem',
         }}
@@ -121,7 +121,7 @@ export default function SobreMiPage() {
               style={{
                 fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '1rem',
                 lineHeight: 1.15,
               }}
@@ -135,7 +135,7 @@ export default function SobreMiPage() {
       </section>
 
       {/* Main content */}
-      <section style={{ backgroundColor: '#080808', paddingBottom: '6rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '6rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div
             style={{
@@ -177,8 +177,8 @@ export default function SobreMiPage() {
                   { label: 'Idiomas', value: 'Español, Inglés' },
                 ].map((item) => (
                   <div key={item.label} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span style={{ color: '#9CA3AF', fontSize: '0.875rem' }}>{item.label}</span>
-                    <span style={{ color: '#F5F5F5', fontSize: '0.875rem', fontWeight: 600 }}>
+                    <span style={{ color: '#5C5652', fontSize: '0.875rem' }}>{item.label}</span>
+                    <span style={{ color: '#1C2B4A', fontSize: '0.875rem', fontWeight: 600 }}>
                       {item.value}
                     </span>
                   </div>
@@ -189,36 +189,36 @@ export default function SobreMiPage() {
             {/* Story text */}
             <AnimatedSection direction="left">
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+                <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
                   Nací en Caracas en enero de 1982. Hijo único de una madre que fue, al mismo tiempo,
                   todo lo que un padre y una madre pueden ser. Crecí en un hogar de mujeres fuertes —
                   mi madre, mi abuela, mi tía — que me enseñaron que la resiliencia no necesita anuncio.
                   Se ejerce en silencio, todos los días.
                 </p>
-                <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+                <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
                   Desde pequeño, el océano fue mi lugar de pensamiento. La playa venezolana me enseñó
                   algo que ningún salón de clases pudo: la constancia del mar es la metáfora perfecta
                   del trabajo que construye cosas que duran.
                 </p>
-                <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+                <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
                   Estudié Administración de Empresas y empecé a desarrollar el pensamiento sistemático
                   sobre negocios que con los años se convertiría en el Método C.E.O. En 2007 conocí
                   a mi esposa, y tres años después tomamos la decisión más valiente de nuestras vidas:
                   mudarnos a Estados Unidos.
                 </p>
-                <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+                <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
                   Los primeros años en USA fueron de aprendizaje puro. Aprendí el inglés de los negocios,
                   no solo el de supervivencia. Aprendí cómo funciona el sistema de seguros americano.
                   Construí una red de cero. Y en medio de todo eso, con mi esposa, criamos a nuestras
                   dos hijas con los mismos valores que me formaron en Venezuela.
                 </p>
-                <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+                <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
                   Fundé WellClub porque vi familias inmigrantes navegando solas un sistema incomprensible.
                   Creé el Método C.E.O. porque entendí que el criterio es el recurso más escaso en el
                   emprendimiento, y que podía ser enseñado. Escribí &ldquo;Para, Piensa y Actúa&rdquo; porque quería
                   que esas ideas llegaran más lejos de lo que puedo llegar yo personalmente.
                 </p>
-                <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8 }}>
+                <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8 }}>
                   Spencer Hoffmann es mi mentor y referente, alguien que llegó antes y dejó el camino
                   más transitado. Eso es exactamente lo que yo quiero ser para la próxima generación
                   de emprendedores.
@@ -238,7 +238,7 @@ export default function SobreMiPage() {
       </section>
 
       {/* Timeline */}
-      <section style={{ backgroundColor: '#111111', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#F0EAE1', padding: '6rem 0' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -246,7 +246,7 @@ export default function SobreMiPage() {
               style={{
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
               }}
             >
@@ -301,7 +301,7 @@ export default function SobreMiPage() {
                   <div>
                     <h3
                       style={{
-                        color: '#F5F5F5',
+                        color: '#1C2B4A',
                         fontWeight: 700,
                         fontSize: '1rem',
                         marginBottom: '0.4rem',
@@ -309,7 +309,7 @@ export default function SobreMiPage() {
                     >
                       {item.title}
                     </h3>
-                    <p style={{ color: '#9CA3AF', fontSize: '0.9rem', lineHeight: 1.7 }}>
+                    <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.7 }}>
                       {item.description}
                     </p>
                   </div>
@@ -321,7 +321,7 @@ export default function SobreMiPage() {
       </section>
 
       {/* Values */}
-      <section style={{ backgroundColor: '#080808', padding: '6rem 0' }}>
+      <section style={{ backgroundColor: '#FAF8F4', padding: '6rem 0' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
             <span className="section-divider" style={{ marginBottom: '1.5rem' }} />
@@ -329,7 +329,7 @@ export default function SobreMiPage() {
               style={{
                 fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginTop: '1rem',
               }}
             >
@@ -357,7 +357,7 @@ export default function SobreMiPage() {
                   >
                     {v.title}
                   </h3>
-                  <p style={{ color: '#9CA3AF', fontSize: '0.9rem', lineHeight: 1.7 }}>
+                  <p style={{ color: '#5C5652', fontSize: '0.9rem', lineHeight: 1.7 }}>
                     {v.description}
                   </p>
                 </div>

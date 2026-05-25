@@ -32,7 +32,7 @@ export default function BlogPage() {
     <>
       {/* Hero */}
       <section
-        style={{ backgroundColor: '#080808', paddingTop: '120px', paddingBottom: '4rem' }}
+        style={{ backgroundColor: '#FAF8F4', paddingTop: '120px', paddingBottom: '4rem' }}
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <AnimatedSection direction="up">
@@ -53,7 +53,7 @@ export default function BlogPage() {
               style={{
                 fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                 fontWeight: 800,
-                color: '#F5F5F5',
+                color: '#1C2B4A',
                 marginBottom: '1.25rem',
                 lineHeight: 1.15,
               }}
@@ -61,7 +61,7 @@ export default function BlogPage() {
               Ideas que{' '}
               <span style={{ color: '#C4922A' }}>mueven</span>
             </h1>
-            <p style={{ color: '#9CA3AF', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '560px' }}>
+            <p style={{ color: '#5C5652', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '560px' }}>
               Reflexiones sobre emprendimiento, criterio estratégico, bienestar e inmigración.
               Sin filtros, con sustancia.
             </p>
@@ -70,7 +70,7 @@ export default function BlogPage() {
       </section>
 
       {/* Category badges (static display) */}
-      <section style={{ backgroundColor: '#080808', paddingBottom: '2rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '2rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
             {categories.map((cat) => (
@@ -82,7 +82,7 @@ export default function BlogPage() {
                   fontSize: '0.8rem',
                   fontWeight: 600,
                   border: '1px solid #333',
-                  color: '#9CA3AF',
+                  color: '#5C5652',
                   cursor: 'default',
                 }}
               >
@@ -94,7 +94,7 @@ export default function BlogPage() {
       </section>
 
       {/* Posts Grid */}
-      <section style={{ backgroundColor: '#080808', paddingBottom: '6rem' }}>
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '6rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
           <div
             style={{
@@ -139,7 +139,7 @@ export default function BlogPage() {
                     {/* Title */}
                     <h2
                       style={{
-                        color: '#F5F5F5',
+                        color: '#1C2B4A',
                         fontWeight: 700,
                         fontSize: '1.05rem',
                         lineHeight: 1.4,
@@ -153,7 +153,7 @@ export default function BlogPage() {
                     {/* Description */}
                     <p
                       style={{
-                        color: '#9CA3AF',
+                        color: '#5C5652',
                         fontSize: '0.875rem',
                         lineHeight: 1.65,
                         marginBottom: '1.25rem',
@@ -168,7 +168,7 @@ export default function BlogPage() {
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        borderTop: '1px solid #222',
+                        borderTop: '1px solid #E8DDD3',
                         paddingTop: '1rem',
                         marginTop: 'auto',
                       }}
