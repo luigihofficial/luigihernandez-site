@@ -331,23 +331,34 @@ export async function POST(req: NextRequest) {
       html: buildConfirmationEmail({ nombre, whatsapp: whatsapp || '', tipo }),
     }
 
-    const [notifyRes, confirmRes] = await Promise.all([
-      fetch('https://api.resend.com/emails', { method: 'POST', headers, body: JSON.stringify(notifyPayload) }),
-      fetch('https://api.resend.com/emails', { method: 'POST', headers, body: JSON.stringify(confirmPayload) }),
-    ])
+    // Enviar notificación a Luigi
+    const notifyRes = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(notifyPayload),
+    })
 
     if (!notifyRes.ok) {
       const errorData = await notifyRes.json().catch(() => ({}))
-      console.error('Resend notify error:', notifyRes.status, errorData)
+      console.error('Resend notify error:', notifyRes.status, JSON.stringify(errorData))
       return NextResponse.json(
         { error: 'No se pudo enviar el mensaje. Intenta de nuevo más tarde.' },
         { status: 500 }
       )
     }
 
+    // Enviar confirmación al usuario
+    const confirmRes = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(confirmPayload),
+    })
+
     if (!confirmRes.ok) {
-      // El email de confirmación falló pero la notificación llegó — no bloqueamos al usuario
-      console.error('Resend confirmation error:', confirmRes.status)
+      const confirmError = await confirmRes.json().catch(() => ({}))
+      console.error('Resend confirmation error:', confirmRes.status, JSON.stringify(confirmError))
+    } else {
+      console.log('Confirmation email sent to:', email)
     }
 
     return NextResponse.json({ success: true })
