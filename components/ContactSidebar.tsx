@@ -50,7 +50,7 @@ export default function ContactSidebar() {
         </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <a
-            href="mailto:info@luigihofficial.com"
+            href="mailto:directo@luigihernandez.com"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -67,7 +67,7 @@ export default function ContactSidebar() {
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
-            info@luigihofficial.com
+            directo@luigihernandez.com
           </a>
           <a
             href="https://wa.me/17862602547"
