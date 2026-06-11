@@ -152,11 +152,16 @@ export default function LibrosPage() {
                 construir con criterio.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <Link href="/contacto" className="btn-primary">
-                  Quiero el libro
-                </Link>
-                <Link href="/conferencias" className="btn-secondary">
-                  Ver conferencias
+                <a
+                  href="https://www.amazon.com/dp/B0GXC6RCCC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  Comprar en Kindle
+                </a>
+                <Link href="/contacto" className="btn-secondary">
+                  Quiero versión física
                 </Link>
               </div>
             </AnimatedSection>
@@ -362,9 +367,19 @@ export default function LibrosPage() {
           </div>
 
           <AnimatedSection direction="up" delay={0.3} style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <Link href="/contacto" className="btn-primary">
-              Quiero este libro
-            </Link>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a
+                href="https://www.amazon.com/dp/B0GXC6RCCC"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Comprar en Kindle
+              </a>
+              <Link href="/contacto" className="btn-secondary">
+                Quiero versión física
+              </Link>
+            </div>
           </AnimatedSection>
         </div>
       </section>

@@ -426,9 +426,19 @@ export default function HomePage() {
                 <strong style={{ color: '#1C2B4A' }}>E</strong>strategia para actuar ·{' '}
                 <strong style={{ color: '#1C2B4A' }}>O</strong>portunidad para avanzar
               </p>
-              <Link href="/libros" className="btn-primary">
-                Ver detalles del libro
-              </Link>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a
+                  href="https://www.amazon.com/dp/B0GXC6RCCC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  Comprar en Kindle
+                </a>
+                <Link href="/libros" className="btn-secondary">
+                  Ver detalles
+                </Link>
+              </div>
             </AnimatedSection>
 
             <AnimatedSection direction="left">
