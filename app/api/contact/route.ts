@@ -316,7 +316,7 @@ export async function POST(req: NextRequest) {
     // Email 1: notificación a Luigi
     const notifyPayload = {
       from: 'Luigi Hernandez <hola@luigihernandez.com>',
-      to: ['info@luigihofficial.com'],
+      to: ['directo@luigihernandez.com'],
       reply_to: email,
       subject: `[${tipoLabel}] Nuevo mensaje de ${nombre} — luigihernandez.com`,
       html: buildHtmlEmail({ nombre, email, whatsapp: whatsapp || '', tipo, mensaje }),
@@ -326,7 +326,7 @@ export async function POST(req: NextRequest) {
     const confirmPayload = {
       from: 'Luigi Hernandez <hola@luigihernandez.com>',
       to: [email],
-      reply_to: 'info@luigihofficial.com',
+      reply_to: 'directo@luigihernandez.com',
       subject: `Recibí tu mensaje — Luigi Hernandez`,
       html: buildConfirmationEmail({ nombre, whatsapp: whatsapp || '', tipo }),
     }
