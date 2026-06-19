@@ -189,12 +189,12 @@ export default function Footer() {
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               <a
-                href="mailto:info@luigihofficial.com"
+                href="mailto:directo@luigihernandez.com"
                 style={{ color: 'rgba(250,248,244,0.6)', textDecoration: 'none', fontSize: '0.875rem', transition: 'color 0.2s ease' }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = '#C4922A')}
                 onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'rgba(250,248,244,0.6)')}
               >
-                info@luigihofficial.com
+                directo@luigihernandez.com
               </a>
               <a
                 href="https://wa.me/17862602547"
