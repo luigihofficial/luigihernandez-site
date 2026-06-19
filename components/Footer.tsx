@@ -5,7 +5,7 @@ import Link from 'next/link'
 const navLinks = [
   { href: '/', label: 'Inicio' },
   { href: '/sobre-mi', label: 'Sobre mí' },
-  { href: '/libros', label: 'Libro' },
+  { href: '/metodo-ceo', label: 'Método C.E.O.' },
   { href: '/conferencias', label: 'Conferencias' },
   { href: '/blog', label: 'Blog' },
   { href: '/prensa', label: 'Prensa' },
