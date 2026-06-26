@@ -192,23 +192,7 @@ export default function ConferenciasPage() {
               href="https://elevate.lospoderesdelexito.com/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                display: 'block',
-                borderRadius: '8px',
-                overflow: 'hidden',
-                boxShadow: '0 20px 60px rgba(28,43,74,0.15)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLAnchorElement
-                el.style.transform = 'translateY(-4px)'
-                el.style.boxShadow = '0 30px 80px rgba(28,43,74,0.22)'
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLAnchorElement
-                el.style.transform = 'translateY(0)'
-                el.style.boxShadow = '0 20px 60px rgba(28,43,74,0.15)'
-              }}
+              className="banner-evento"
             >
               <Image
                 src="/images/eventos/elevate-experience-banner.png"

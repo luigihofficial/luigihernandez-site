@@ -48,6 +48,19 @@ body {
   background: var(--gold);
 }
 
+/* Event banner */
+.banner-evento {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(28,43,74,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.banner-evento:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 80px rgba(28,43,74,0.22);
+}
+
 /* Buttons */
 .btn-primary {
   display: inline-flex;
