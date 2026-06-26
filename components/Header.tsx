@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -122,29 +123,20 @@ export default function Header() {
         {/* Logo */}
         <Link
           href={isEN ? '/en' : '/'}
-          style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}
+          style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
         >
-          <span
+          <Image
+            src="/images/logos/luigi-hernandez-wordmark.png"
+            alt="Luigi Hernandez"
+            width={1100}
+            height={830}
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '36px',
-              height: '36px',
-              borderRadius: '50%',
-              border: '2px solid #C4922A',
-              color: '#C4922A',
-              fontWeight: 800,
-              fontSize: '0.85rem',
-              letterSpacing: '0.05em',
-              flexShrink: 0,
+              height: '52px',
+              width: 'auto',
+              mixBlendMode: 'multiply',
             }}
-          >
-            LH
-          </span>
-          <span style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.02em' }}>
-            Luigi Hernandez
-          </span>
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
