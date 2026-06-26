@@ -466,6 +466,72 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* EVENTO — Elevate Experience */}
+      <section style={{ backgroundColor: '#F0EAE1', padding: '4rem 0' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
+          <AnimatedSection direction="up" style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <span
+              style={{
+                display: 'inline-block',
+                border: '1px solid rgba(196,146,42,0.5)',
+                borderRadius: '2px',
+                padding: '0.35rem 1rem',
+                fontSize: '0.75rem',
+                color: '#C4922A',
+                fontWeight: 600,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+              }}
+            >
+              Próximo evento · 11 de julio 2026
+            </span>
+          </AnimatedSection>
+          <AnimatedSection direction="up" delay={0.1}>
+            <a
+              href="https://elevate.lospoderesdelexito.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 60px rgba(28,43,74,0.15)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLAnchorElement
+                el.style.transform = 'translateY(-4px)'
+                el.style.boxShadow = '0 30px 80px rgba(28,43,74,0.22)'
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLAnchorElement
+                el.style.transform = 'translateY(0)'
+                el.style.boxShadow = '0 20px 60px rgba(28,43,74,0.15)'
+              }}
+            >
+              <Image
+                src="/images/eventos/elevate-experience-banner.png"
+                alt="Elevate Experience — 5 Autores · 1 Escenario · 11 de julio 2026 · Miami"
+                width={1400}
+                height={466}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+                priority
+              />
+            </a>
+          </AnimatedSection>
+          <AnimatedSection direction="up" delay={0.2} style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <a
+              href="https://elevate.lospoderesdelexito.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Reserva tu lugar
+            </a>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* QUOTE — Navy section */}
       <section style={{ backgroundColor: '#1C2B4A', padding: '7rem 0' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>

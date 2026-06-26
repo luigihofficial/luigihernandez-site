@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import AnimatedSection from '@/components/AnimatedSection'
 
@@ -179,6 +180,45 @@ export default function ConferenciasPage() {
               quien construyó desde cero en un país nuevo. Tres keynotes disponibles, todas
               con sustancia práctica.
             </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* EVENTO DESTACADO — Elevate Experience */}
+      <section style={{ backgroundColor: '#FAF8F4', paddingBottom: '2rem' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem' }}>
+          <AnimatedSection direction="up">
+            <a
+              href="https://elevate.lospoderesdelexito.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                borderRadius: '8px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 60px rgba(28,43,74,0.15)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLAnchorElement
+                el.style.transform = 'translateY(-4px)'
+                el.style.boxShadow = '0 30px 80px rgba(28,43,74,0.22)'
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLAnchorElement
+                el.style.transform = 'translateY(0)'
+                el.style.boxShadow = '0 20px 60px rgba(28,43,74,0.15)'
+              }}
+            >
+              <Image
+                src="/images/eventos/elevate-experience-banner.png"
+                alt="Elevate Experience — 5 Autores · 1 Escenario · 11 de julio 2026 · Miami"
+                width={1400}
+                height={466}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+                priority
+              />
+            </a>
           </AnimatedSection>
         </div>
       </section>
