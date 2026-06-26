@@ -122,14 +122,17 @@ export default function Header() {
         {/* Logo */}
         <Link
           href={isEN ? '/en' : '/'}
-          style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logos/luigi-hernandez-wordmark.png"
-            alt="Luigi Hernandez"
-            style={{ height: '52px', width: 'auto', mixBlendMode: 'multiply' }}
+            src="/images/logos/luigi-hernandez-badge.png"
+            alt=""
+            style={{ width: '36px', height: '36px', mixBlendMode: 'multiply', flexShrink: 0 }}
           />
+          <span style={{ color: '#1C2B4A', fontWeight: 700, fontSize: '1rem', letterSpacing: '0.02em' }}>
+            Luigi Hernandez
+          </span>
         </Link>
 
         {/* Desktop Nav */}
