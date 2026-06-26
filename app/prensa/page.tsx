@@ -234,11 +234,11 @@ export default function PrensaPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <a
-                  href="mailto:info@luigihofficial.com"
+                  href="mailto:directo@luigihernandez.com"
                   className="btn-primary"
                   style={{ fontSize: '0.875rem' }}
                 >
-                  info@luigihofficial.com
+                  directo@luigihernandez.com
                 </a>
                 <Link href="/contacto" className="btn-secondary" style={{ fontSize: '0.875rem' }}>
                   Formulario de contacto

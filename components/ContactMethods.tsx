@@ -8,8 +8,8 @@ const contactMethods = [
       </svg>
     ),
     label: 'Email',
-    value: 'info@luigihofficial.com',
-    href: 'mailto:info@luigihofficial.com',
+    value: 'directo@luigihernandez.com',
+    href: 'mailto:directo@luigihernandez.com',
   },
   {
     icon: (

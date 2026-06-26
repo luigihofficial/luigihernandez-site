@@ -47,7 +47,7 @@ const faqSchema = {
       name: '¿Cómo se contrata a Luigi Hernandez como speaker?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A través del formulario de contacto en luigihernandez.com/contacto o directamente por email a info@luigihofficial.com.',
+        text: 'A través del formulario de contacto en luigihernandez.com/contacto o directamente por email a directo@luigihernandez.com.',
       },
     },
     {
@@ -124,7 +124,7 @@ const faqs = [
   },
   {
     q: '¿Cómo se hace la contratación?',
-    a: 'A través del formulario de contacto o directamente por email a info@luigihofficial.com. El proceso es simple y rápido.',
+    a: 'A través del formulario de contacto o directamente por email a directo@luigihernandez.com. El proceso es simple y rápido.',
   },
   {
     q: '¿Personaliza el contenido para cada evento?',
