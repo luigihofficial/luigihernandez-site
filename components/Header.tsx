@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -125,17 +124,11 @@ export default function Header() {
           href={isEN ? '/en' : '/'}
           style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/images/logos/luigi-hernandez-wordmark.png"
             alt="Luigi Hernandez"
-            width={1100}
-            height={830}
-            style={{
-              height: '52px',
-              width: 'auto',
-              mixBlendMode: 'multiply',
-            }}
-            priority
+            style={{ height: '52px', width: 'auto', mixBlendMode: 'multiply' }}
           />
         </Link>
 
