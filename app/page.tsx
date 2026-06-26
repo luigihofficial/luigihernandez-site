@@ -503,16 +503,6 @@ export default function HomePage() {
               />
             </a>
           </AnimatedSection>
-          <AnimatedSection direction="up" delay={0.2} style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <a
-              href="https://elevate.lospoderesdelexito.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Reserva tu lugar
-            </a>
-          </AnimatedSection>
         </div>
       </section>
 
