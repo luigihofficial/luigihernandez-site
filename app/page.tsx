@@ -435,9 +435,14 @@ export default function HomePage() {
                 >
                   Comprar en Kindle
                 </a>
-                <Link href="/libros" className="btn-secondary">
-                  Ver detalles
-                </Link>
+                <a
+                  href="https://www.amazon.com/dp/B0H56HML2C"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary"
+                >
+                  Versión impresa
+                </a>
               </div>
             </AnimatedSection>
 
