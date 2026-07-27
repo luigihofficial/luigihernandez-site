@@ -160,9 +160,14 @@ export default function LibrosPage() {
                 >
                   Comprar en Kindle
                 </a>
-                <Link href="/contacto" className="btn-secondary">
-                  Quiero versión física
-                </Link>
+                <a
+                  href="https://www.amazon.com/dp/B0H56HML2C"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary"
+                >
+                  Versión impresa
+                </a>
               </div>
             </AnimatedSection>
 
@@ -376,9 +381,14 @@ export default function LibrosPage() {
               >
                 Comprar en Kindle
               </a>
-              <Link href="/contacto" className="btn-secondary">
-                Quiero versión física
-              </Link>
+              <a
+                href="https://www.amazon.com/dp/B0H56HML2C"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+              >
+                Versión impresa
+              </a>
             </div>
           </AnimatedSection>
         </div>

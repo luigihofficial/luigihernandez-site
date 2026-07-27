@@ -53,7 +53,7 @@ export default function BooksEN() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy on Kindle</a>
-                <Link href="/en/conferences" className="btn-secondary">See Keynotes</Link>
+                <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-secondary">Paperback</a>
               </div>
             </AnimatedSection>
             <AnimatedSection direction="left">
@@ -130,7 +130,10 @@ export default function BooksEN() {
             ))}
           </div>
           <AnimatedSection direction="up" delay={0.3} style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy on Kindle</a>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy on Kindle</a>
+              <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-secondary">Paperback</a>
+            </div>
           </AnimatedSection>
         </div>
       </section>
