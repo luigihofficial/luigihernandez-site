@@ -428,20 +428,12 @@ export default function HomePage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a
-                  href="https://www.amazon.com/dp/B0GXC6RCCC"
+                  href="https://www.amazon.com/dp/B0H56HML2C"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
                 >
-                  Comprar en Kindle
-                </a>
-                <a
-                  href="https://www.amazon.com/dp/B0H56HML2C"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary"
-                >
-                  Versión impresa
+                  Comprar el libro
                 </a>
               </div>
             </AnimatedSection>

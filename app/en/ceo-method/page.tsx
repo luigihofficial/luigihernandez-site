@@ -39,8 +39,8 @@ const formats = [
     title: 'The Book',
     subtitle: 'Stop, Think, Act',
     description: 'The complete method in paperback and Kindle. Six chapters, practical exercises, and the full system to apply from day one.',
-    cta: 'Buy on Kindle',
-    href: 'https://www.amazon.com/dp/B0GXC6RCCC',
+    cta: 'Buy the Book',
+    href: 'https://www.amazon.com/dp/B0H56HML2C',
     external: true,
   },
   {
@@ -79,7 +79,7 @@ export default function CEOMethodEN() {
               Not a 12-step framework. A thinking system for entrepreneurs and leaders who want to stop improvising and start building with real criterion.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy the Book</a>
+              <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy the Book</a>
               <Link href="/en/contact" className="btn-secondary">Book Mentorship</Link>
             </div>
           </AnimatedSection>
@@ -164,7 +164,7 @@ export default function CEOMethodEN() {
             <h2 style={{ color: '#FAF8F4', fontWeight: 800, fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', marginTop: '1rem', marginBottom: '1rem' }}>Ready to apply the method?</h2>
             <p style={{ color: 'rgba(250,248,244,0.65)', fontSize: '1rem', lineHeight: 1.8, marginBottom: '2rem' }}>Start with the book, or talk to me directly if you want to apply it to your business with personal guidance.</p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary-light">Buy on Kindle</a>
+              <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-primary-light">Buy the Book</a>
               <Link href="/en/contact" className="btn-secondary-light">Talk to Luigi</Link>
             </div>
           </AnimatedSection>

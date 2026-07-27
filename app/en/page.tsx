@@ -117,7 +117,7 @@ export default function HomeEN() {
                 The book that distills years of real entrepreneurship into a practical system. For leaders who want to stop improvising and start building with true criterion.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy on Kindle</a>
+                <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy the Book</a>
                 <Link href="/en/books" className="btn-secondary">Book Details</Link>
               </div>
             </AnimatedSection>

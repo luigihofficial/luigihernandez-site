@@ -82,8 +82,8 @@ const formats = [
     title: 'El libro',
     subtitle: 'Para, Piensa y Actúa',
     description: 'La versión completa del método en papel y Kindle. Seis capítulos, ejercicios prácticos, y el sistema completo para aplicarlo desde el día uno.',
-    cta: 'Comprar en Kindle',
-    href: 'https://www.amazon.com/dp/B0GXC6RCCC',
+    cta: 'Comprar el libro',
+    href: 'https://www.amazon.com/dp/B0H56HML2C',
     external: true,
   },
   {
@@ -160,7 +160,7 @@ export default function MetodoCEOPage() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <a
-                href="https://www.amazon.com/dp/B0GXC6RCCC"
+                href="https://www.amazon.com/dp/B0H56HML2C"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -387,12 +387,12 @@ export default function MetodoCEOPage() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
-                href="https://www.amazon.com/dp/B0GXC6RCCC"
+                href="https://www.amazon.com/dp/B0H56HML2C"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary-light"
               >
-                Comprar en Kindle
+                Comprar el libro
               </a>
               <Link href="/contacto" className="btn-secondary-light">
                 Hablar con Luigi

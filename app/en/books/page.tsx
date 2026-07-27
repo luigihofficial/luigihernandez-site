@@ -52,8 +52,7 @@ export default function BooksEN() {
                 The book that condenses years of real entrepreneurship into a practical system. For leaders and entrepreneurs who want to stop improvising and start building with criterion.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy on Kindle</a>
-                <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-secondary">Paperback</a>
+                <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy the Book</a>
               </div>
             </AnimatedSection>
             <AnimatedSection direction="left">
@@ -131,8 +130,7 @@ export default function BooksEN() {
           </div>
           <AnimatedSection direction="up" delay={0.3} style={{ textAlign: 'center', marginTop: '3rem' }}>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://www.amazon.com/dp/B0GXC6RCCC" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy on Kindle</a>
-              <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-secondary">Paperback</a>
+              <a href="https://www.amazon.com/dp/B0H56HML2C" target="_blank" rel="noopener noreferrer" className="btn-primary">Buy the Book</a>
             </div>
           </AnimatedSection>
         </div>
