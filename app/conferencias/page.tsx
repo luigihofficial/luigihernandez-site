@@ -196,7 +196,7 @@ export default function ConferenciasPage() {
             >
               <Image
                 src="/images/eventos/elevate-experience-banner.png"
-                alt="Elevate Experience — 5 Autores · 1 Escenario · 11 de julio 2026 · Miami"
+                alt="Elevate Experience — 5 Autores · 1 Escenario · 5 de septiembre 2026 · Miami"
                 width={1400}
                 height={466}
                 style={{ width: '100%', height: 'auto', display: 'block' }}
